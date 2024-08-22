@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    height: 100vh; 
 }
 
 #sidebar {
@@ -19,7 +20,7 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -27,17 +28,23 @@ body {
     flex: 1;
     padding: 20px;
     text-align: center;
-    margin-left: 240px; /* 增加间隔 */
+    margin-left: 240px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* 使内容垂直居中 */
+    height: 85%; 
 }
 
 #main h1, #all-words-page h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#main h1{
+    font-size: 48px;
+    background-color: rgb(252, 236, 216);
+    padding: 25px;
 }
 
 #main button {
@@ -51,7 +58,7 @@ body {
 }
 
 .word {
-    margin: 20px 0; /* 增加间隔 */
+    margin: 20px 0; 
     text-align: left;
 }
 
