@@ -51,8 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
     saveExitButton.addEventListener('click', () => {
         mainDiv.style.display = 'block';
         studyDiv.style.display = 'none';
+        mainDiv.style.display = 'flex';
+        mainDiv.style.flexDirection = 'column';
+        mainDiv.style.alignItems = 'center';
+        mainDiv.style.justifyContent = 'center';
+        mainDiv.style.height = '85vh';
         updateProgress();
     });
+    
 
     allWordsButton.addEventListener('click', () => {
         mainDiv.style.display = 'none';
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mainDiv.style.flexDirection = 'column';
         mainDiv.style.alignItems = 'center';
         mainDiv.style.justifyContent = 'center';
-        mainDiv.style.height = '100vh';
+        mainDiv.style.height = '85vh';
     });
 
     function updateProgress() {
