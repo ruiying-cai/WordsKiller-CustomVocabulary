@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
+}
+
+#sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#main, #study, #all-words-page {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 240px; /* 增加间隔 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 使内容垂直居中 */
+}
+
+#main h1, #all-words-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main button {
+    margin-top: 10px;
+}
+
+#progress, #study-progress {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.word {
+    margin: 20px 0; /* 增加间隔 */
+    text-align: left;
+}
+
+.word p {
+    margin: 5px 0;
+}
+
+.word .kill-btn {
+    margin-left: 10px;
+}
+
+.killed {
+    color: gray;
+}
+
+#words .word {
+    font-size: 24px;
+}
+
+#words .word .part-of-speech {
+    font-size: 14px;
+}
+
+#words .word .definition {
+    font-size: 18px;
+    color: gray;
+    font-style: italic;
+}
+
+#words .word .example {
+    font-size: 18px;
+}

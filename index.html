@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words Killer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <button id="all-words">All Words</button>
+        <button id="filter-kill">Filter Killed</button>
+        <button id="filter-unkill">Filter Unkilled</button>
+    </div>
+    <div id="main">
+        <h1>Words Killer</h1>
+        <input type="file" id="file-input" accept=".xlsx">
+        <button id="enter">Enter</button>
+        <p id="progress">Progress: 0/1000</p>
+    </div>
+    <div id="study" style="display: none;">
+        <p id="study-progress">Progress: 0/1000</p>
+        <div id="words"></div>
+        <button id="refresh">Refresh</button>
+        <button id="save-exit">Save and Exit</button>
+    </div>
+    <div id="all-words-page" style="display: none;">
+        <h1>All Words</h1>
+        <div id="word-list"></div>
+        <button id="back">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
